@@ -30,7 +30,7 @@ import VideoList from './components/VideoList'
               params: {
                 part: "snippet",
                 maxResults: 10,
-                 key:"AIzaSyAzyCuOLQookMPi5fNBdhC7p6KKOxQ16-Y",
+                 key:"api-key",
                 q: searchVideo,
               }
             });
