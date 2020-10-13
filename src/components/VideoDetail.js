@@ -11,10 +11,13 @@ function VideoDetail({ video })  {
       <Paper elevation={6} style={{ height: "70%" }}>
         <iframe
           frameBorder="0"
-          height="100%"
+          height="400"
           width="100%"
           title="Video Player"
           src={videoSrc}
+          allowFullScreen
+         
+          
         />
       </Paper>
       <Paper elevation={6} style={{ padding: "15px" }}>
