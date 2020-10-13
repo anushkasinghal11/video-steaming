@@ -19,7 +19,7 @@ import VideoList from './components/VideoList'
                   <VideoDetail video={selectedVideo} />
                 </Grid>
                 <Grid item xs={4}>
-                 
+                <VideoList videos={videos} onVideoSelect={setSelectedVideo} />
                 </Grid>
               </Grid>
             </Grid>
@@ -30,7 +30,7 @@ import VideoList from './components/VideoList'
               params: {
                 part: "snippet",
                 maxResults: 10,
-                 key:"api-key",
+                 key:"AIzaSyAzyCuOLQookMPi5fNBdhC7p6KKOxQ16-Y",
                 q: searchVideo,
               }
             });
