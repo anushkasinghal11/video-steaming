@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 
 import VideoItem from "./VideoItem";
-
+import "../App.js";
 function VideoList ({ videos, onVideoSelect }) {
   const listOfVideos = videos.map(video => (
     <VideoItem
@@ -13,8 +13,8 @@ function VideoList ({ videos, onVideoSelect }) {
   ));
 
   return (
-      <div>
-    <Grid container spacing={10}>
+      <div className="video-list">
+    <Grid container spacing={0}>
       {listOfVideos}
     </Grid>
     </div>

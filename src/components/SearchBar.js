@@ -1,5 +1,6 @@
 import React, {useState}from 'react'
 import { Paper, TextField } from "@material-ui/core";
+import "../App.css"
 function SearchBar({onSubmit}) {
     const[searchVideo,setSearchVideo]=useState('')
   const  handleChange=
@@ -12,15 +13,15 @@ function SearchBar({onSubmit}) {
         }
     //on keypress is not working
     return (
-        <div>
-          <Paper elevation={6} style={{ padding: "25px"}}>
+        <div className="search-bar">
+          
       <TextField
         fullWidth
-        label="Search..."
         onChange={handleChange}
+        className="search-text"
       />
-      <button onClick={handleSubmit}>Search</button>
-    </Paper>
+      <button className="search-button" onClick={handleSubmit}>Search</button>
+    
     </div>
     )
 }
